@@ -1,0 +1,26 @@
+.circle-item {
+  z-index: 100;
+
+  cursor: pointer;
+  animation-name: wiggle;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 100ms;
+  animation-iteration-count: infinite;
+
+  border-radius: 1000px;
+  background-position: center;
+  background-size: calc(100% + 5px);
+
+  &:hover {
+    transition: opacity 0.1s ease-in;
+
+    opacity: 0.8;
+  }
+
+  &:active {
+    transition: opacity 1s ease-in;
+
+    opacity: 0.1;
+  }
+}

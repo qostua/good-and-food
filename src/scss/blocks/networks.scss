@@ -1,0 +1,10 @@
+.networks {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.networks__item {
+  color: inherit;
+}

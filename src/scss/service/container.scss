@@ -1,0 +1,51 @@
+.container {
+  box-sizing: border-box;
+  max-width: 255px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container--two-col {
+  display: flex;
+  flex-direction: column-reverse;
+
+  align-items: center;
+  gap: 10px;
+}
+
+.container--reverse-col {
+  flex-direction: column;
+}
+
+.container--main {
+  overflow: hidden;
+
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 540px;
+  }
+
+  .container--two-col {
+    flex-direction: row;
+
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .container--reverse-col {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .container {
+    max-width: 1110px;
+  }
+
+  .container--two-col {
+    gap: 125px;
+  }
+}

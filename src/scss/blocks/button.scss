@@ -1,0 +1,14 @@
+.button {
+  padding: 12px 12px 10px;
+
+  cursor: pointer;
+  text-transform: uppercase;
+
+  color: var(--default-bg);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--dark-orange);
+
+  @include text(16, 18.8, 600);
+  @include active();
+}

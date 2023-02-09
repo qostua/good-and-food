@@ -1,0 +1,42 @@
+.title {
+  margin-bottom: 11px;
+
+  letter-spacing: -0.3px;
+  text-transform: uppercase;
+
+  color: var(--dark-blue);
+
+  font-family: "Ubuntu", Monospaced, monospace;
+
+  @include text(13, 15.6, 700);
+}
+
+.title--white {
+  color: var(--default-bg);
+}
+
+.title__accent {
+  color: var(--orange);
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    letter-spacing: -0.6px;
+
+    @include text(16, 19.2, 700);
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .title {
+    letter-spacing: -1.3px;
+
+    @include text(32, 38.4, 700);
+  }
+
+  .title--bigger {
+    letter-spacing: -1.3px;
+
+    @include text(42, 50.4, 700);
+  }
+}

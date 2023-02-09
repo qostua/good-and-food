@@ -1,0 +1,85 @@
+.download {
+  margin-bottom: 28px;
+}
+
+.download__store-list {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.download__image {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    position: relative;
+
+    margin-bottom: 38px;
+
+    &::before {
+      position: absolute;
+      z-index: -2;
+      bottom: -48px;
+      left: 50%;
+
+      content: '';
+      transform: translateX(-50%);
+
+      border-bottom-right-radius: 100%;
+      border-bottom-left-radius: 100%;
+      background-color: var(--default-bg);
+
+      @include size(6666);
+    }
+  }
+
+  .download__col {
+    margin-top: 20px;
+  }
+
+  .download__title {
+    margin-bottom: 11px;
+  }
+
+  .download__store-list {
+    justify-content: flex-start;
+    gap: 21px;
+  }
+
+  .download__image {
+    display: block;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .download {
+    padding-bottom: 50px;
+  }
+
+  .download__col {
+    margin-top: 130px;
+  }
+
+  .download__title {
+    margin-bottom: 25px;
+  }
+
+  .download__text {
+    margin-bottom: 73px;
+  }
+
+  .download__store-list {
+  }
+
+  .download__image-wrap {
+    z-index: 1;
+
+    margin-left: 7px;
+  }
+
+  .download__image {
+    display: block;
+  }
+}

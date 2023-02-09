@@ -1,0 +1,132 @@
+.main-nav {
+  padding: 13px 0 0 0;
+}
+
+.main-nav--big {
+  padding: 20px 0 23px;
+}
+
+.main-nav-list {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav__item {
+  color: white;
+
+  &:active .main-nav__item-icon {
+    animation-play-state: paused;
+  }
+
+  &:hover .main-nav__item-icon {
+    animation-name: scale;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+.main-nav__item--phone:hover .main-nav__item-icon {
+  animation-name: shake-rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.main-nav__link {
+  display: flex;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+
+  align-items: center;
+  gap: 10px;
+  @include text(18, 30.6, 700)
+}
+
+.main-nav__item-desc {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav--big {
+    padding: 10px 0;
+  }
+
+  .main-nav-list {
+    justify-content: flex-start;
+    gap: 14px;
+  }
+
+  .main-nav__item--partner {
+    color: var(--orange);
+
+    .main-nav__link {
+      padding: 8px 25px;
+
+      border-radius: 1000px;
+      background-color: var(--default-bg);
+    }
+    .main-nav__item-desc {
+      display: inline;
+    }
+  }
+
+  .main-nav__item--logo {
+    margin-right: auto;
+
+    .main-nav__item-icon {
+      @include size(48);
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .main-nav-list {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .main-nav__item--phone, .main-nav__item--email {
+    .main-nav__link {
+      @include text(16, 27, 700)
+    }
+    .main-nav__item-desc {
+      display: inline;
+    }
+  }
+
+  .main-nav__item--phone {
+    margin-right: 30px;
+  }
+
+  .main-nav__item--email {
+    margin-right: 98px;
+  }
+
+  .main-nav__item--login {
+    margin-right: 10px;
+
+    color: var(--orange);
+
+    .main-nav__link {
+      padding: 8px 25px;
+
+      border-radius: 1000px;
+      background-color: var(--default-bg);
+    }
+    .main-nav__item-desc {
+      display: inline;
+    }
+  }
+
+  .main-nav__item--logo {
+    margin-right: auto;
+
+    .main-nav__item-icon {
+      @include size(42);
+    }
+  }
+}

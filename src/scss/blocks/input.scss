@@ -1,0 +1,14 @@
+.input {
+  padding: 11px;
+
+  color: var(--black-gray);
+  border: none;
+  border-radius: 8px;
+  background-color: var(--light-gray);
+
+  @include text(16, 18.8, 400);
+
+  &::placeholder {
+    color: var(--dark-gray);
+  }
+}

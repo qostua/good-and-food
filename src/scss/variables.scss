@@ -1,0 +1,74 @@
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+$desctop-width: 1440px;
+$tablet-width: 768px;
+
+:root {
+  --orange: #FFAB00;
+  --dark-orange: #F7620F;
+  --desc-color: #4E5C66;
+  --default-bg: #FFFFFF;
+  --default-text: #000000;
+  --accent: #F7620F;
+  --dark-blue: #0E283C;
+  --light-gray: #EEEFF2;
+  --gray: #768C9B;
+  --dark-gray: #4E5C66;
+  --black-gray: #414141;
+  --middle-black: #565656;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(5deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes disapear {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

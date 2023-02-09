@@ -1,0 +1,253 @@
+.reviews {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 27px;
+  padding: 37px 0 37px;
+
+  background-image: url("../image/bubble.png"),
+          radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
+  background-position: center;
+  background-size: 1160px;
+}
+
+.reviews__title {
+  margin-bottom: 15px;
+
+  @include text(16, 19, 700);
+}
+
+.reviews__text {
+  @include text(14, 21, 400);
+}
+
+.reviews__item-list {
+  display: flex;
+
+  margin-bottom: 10px;
+
+  gap: 6.3px;
+}
+
+.reviews__item-point {
+  border-radius: 8.5px;
+  background-color: white;
+
+  @include size(17);
+}
+
+.reviews__item-point--wide {
+  @include size(82, 17);
+}
+
+.reviews__item-desc {
+  margin-bottom: 10px;
+
+  color: var(--default-bg);
+
+  font-family: 'Times New Roman', sans-serif;
+  font-style: italic;
+
+  @include text(14, 21, 400);
+}
+
+.reviews__item-author {
+  text-align: right;
+
+  color: var(--default-bg);
+
+  @include text(14, 21, 700);
+}
+
+.reviews__image-wrap {
+  display: none;
+}
+
+.reviews__circles-list {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+
+  display: none;
+
+  transform: translateX(-50%);
+}
+
+.reviews__circles-item {
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 46px 0 37px;
+
+    background: none;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 50%;
+
+      content: '';
+      transform: translateX(-50%);
+
+      border-radius: 100%;
+      background-image: url("../image/bubble.png"),
+              radial-gradient(#513E63 54%, #282837 , #4D4793 , #9260A9 71%);
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 100vw, auto;
+
+      @include size(6666);
+    }
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 107%;
+      left: 50%;
+
+      content: '';
+      transform: translateX(-50%);
+
+      border-radius: 100%;
+      background-color: var(--default-bg);
+
+      @include size(6666);
+    }
+  }
+
+  .reviews__title {
+    margin-bottom: 25px;
+  }
+
+  .reviews__text {
+    margin-bottom: 21px;
+  }
+
+  .reviews__item-list {
+    margin-bottom: 20px;
+  }
+
+  .reviews__item-desc {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .reviews {
+    &::after {
+      top: 81%;
+    }
+  }
+
+  .delivery__reviews {
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: flex-end;
+    gap: 65px;
+    align-items: flex-start;
+  }
+
+  .reviews__col {
+    width: 445px;
+    margin-top: 32px;
+  }
+
+  .reviews__title {
+    margin-bottom: 19px;
+
+    @include text(32, 31.7, 700);
+  }
+
+  .reviews__text {
+    margin-bottom: 21px;
+  }
+
+  .reviews__item-list {
+    margin-bottom: 20px;
+  }
+
+  .reviews__item-desc {
+    margin-bottom: 10px;
+
+    line-height: 24px;
+
+    @include text(16, 24);
+  }
+
+  .reviews__image-wrap {
+    display: block;
+
+    margin-top: -94px;
+    margin-left: 26px;
+  }
+
+  .reviews__circles-list {
+    display: block;
+  }
+
+  .reviews__circles-item--1 {
+    top: -75px;
+    left: -174px;
+
+    animation-delay: random(2000) + ms;
+
+    background-image: url(../image/circle-3-desktop.jpg);
+
+    @include size(71);
+    filter: blur(2px);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/circle-3-desktop@2x.jpg);
+    }
+  }
+  .reviews__circles-item--2 {
+    top: -59px;
+    left: 449px;
+
+    animation-delay: random(2000) + ms;
+
+    background-image: url(../image/circle-4-desktop.jpg);
+
+    @include size(106);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/circle-4-desktop@2x.jpg);
+    }
+  }
+  .reviews__circles-item--3 {
+    top: 391px;
+    left: 420px;
+
+    animation-delay: random(2000) + ms;
+
+    background-image: url(../image/circle-8-tablet.jpg);
+
+    @include size(137);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/circle-8-tablet@2x.jpg);
+    }
+  }
+
+  .reviews__leaves {
+    position: absolute;
+    right: 0;
+    bottom: -196px;
+
+    animation-name: shake-rotate;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    background-image: url(../image/leaves.png);
+
+    @include size(653, 323);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/leaves@2x.png);
+    }
+  }
+}

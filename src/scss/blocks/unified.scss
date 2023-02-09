@@ -1,0 +1,41 @@
+.unified {
+  margin-bottom: 18px;
+}
+
+.unified__text {
+  margin-bottom: 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .unified {
+    margin-bottom: 2px;
+  }
+
+  .unified__title {
+    margin-bottom: 13px;
+  }
+
+  .unified__text {
+    margin-bottom: -5px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .unified {
+    display: flex;
+
+    margin-bottom: 65px;
+
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .unified__col {
+    width: 445px;
+    margin-top: 52px;
+  }
+
+  .unified__title {
+    margin-bottom: 30px;
+  }
+}

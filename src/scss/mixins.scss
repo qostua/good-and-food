@@ -1,0 +1,52 @@
+@mixin text($size, $height: $size, $weight: 400) {
+  font-size: $size * 1px;
+  font-weight: $weight;
+  line-height: $height * 1px;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width * 1px;
+  height: $height * 1px;
+}
+
+@mixin active($hover-opacity: 0.8, $active-opacity: 0.6) {
+  &:hover {
+    opacity: $hover-opacity;
+  }
+  &:active {
+    opacity: $active-opacity;
+  }
+}
+
+@mixin pseudo($order, $top, $left, $img-name, $width, $height: $width) {
+  position: relative;
+
+  &::#{$order} {
+    position: absolute;
+    top: $top * 1px;
+    left: $left * 1px;
+
+    width: $width * 1px;
+    height: $height * 1px;
+
+    content: "";
+
+    background-image: url('../img/#{$img-name}');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+@mixin font-face($font-family, $url, $weight, $style: normal) {
+	@font-face {
+    font-family: '#{$font-family}';
+		font-weight: $weight;
+		font-style: $style;
+
+		src: url('../fonts/#{$url}.woff2') format('woff2'),
+		url('../fonts/#{$url}.woff') format('woff');
+		font-display: swap;
+	}
+}
+

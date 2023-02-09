@@ -1,0 +1,27 @@
+.text {
+  margin-bottom: 10px;
+
+  color: var(--gray);
+
+  @include text(13, 20, 400);
+}
+
+.text--white {
+  color: var(--default-bg);
+}
+
+@media (min-width: $tablet-width) {
+  .text {
+    @include text(14, 21, 400);
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .text {
+    @include text(14, 21, 400);
+  }
+
+  .text--bigger {
+    @include text(18, 27, 400);
+  }
+}
