@@ -1,6 +1,6 @@
 # Тестовое задание «Gооd Аnd Fооd»
 
-🌐 [Сайт проекта](https://qostua.github.io/) | 📄 [Репозиторий](https://github.com/qostua/)
+🌐 [Сайт проекта](https://qostua.github.io/good-and-food/public/index.html) | 📄 [Репозиторий](https://github.com/qostua/good-and-food) | 🦴 [Исходники](https://github.com/qostua/good-and-food/tree/main/src)
 
 **project tegs**: `HTML5`, `CSS3`, `Flex`, `Grid`, `Adaptive`, `Retina`, `Gulp`, `webpack`, `CSS-animation`
 
