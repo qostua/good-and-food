@@ -9,7 +9,8 @@
           radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
 
   @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
-    background-image: url("../image/bubble@2x.png");
+    background-image: url("../image/bubble@2x.png"),
+          radial-gradient(95.07% 139.28% at 50% -43.54%, #513E63 0%, #282837 29.64%, #4D4793 85.3%, #9260A9 100%);
   }
   background-position: center;
   background-size: 1160px;
