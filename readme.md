@@ -33,6 +33,7 @@
 
 - готовность для retina экранов
 
+![готовность для retina экранов](https://user-images.githubusercontent.com/79047487/218055414-a645d3b6-f393-4672-a311-97b01fcc3af0.png)
 
 
 
