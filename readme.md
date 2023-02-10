@@ -4,7 +4,7 @@
 
 **project tegs**: `HTML5`, `CSS3`, `Flex`, `Grid`, `Adaptive`, `Retina`, `Gulp`, `webpack`, `CSS-animation`
 
-**lighthouse scores**: ✅ Performance `?` | ✅ Best Practices `?`
+**lighthouse scores**: ✅ Performance `98` | ✅ Accessibility `93` | ✅ Best Practices `100`
 
 ![Интерфейс сайта](https://user-images.githubusercontent.com/79047487/217961485-3cc6212e-fa3e-481b-a1b8-ea71f02747b1.png)
 
@@ -21,6 +21,19 @@
 - валидность кода
 - скорость загрузки
 - готовность для retina экранов
+
+Результат:
+- валидность кода
+
+![валидность кода](https://user-images.githubusercontent.com/79047487/218053505-4dae73d4-2393-4b05-b0f2-03c04e8a3940.png)
+
+- скорость загрузки
+
+![валидность кода](https://user-images.githubusercontent.com/79047487/218053719-f779fa70-6450-4bdb-8fb4-a5a16bc2f7e7.png)
+
+- готовность для retina экранов
+
+
 
 
 ### <a name="start">Запуск проекта</a>
