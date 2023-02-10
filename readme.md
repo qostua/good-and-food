@@ -50,6 +50,19 @@ npm i
 npm run start
 ```
 
+Запуск сборки:
+
+```bash
+npm run build
+```
+
+Конвертация шрифтов и изображений:
+
+```bash
+gulp convertToWebp
+gulp convertFonts
+```
+
 ### <a name="dependencies">Список внешних зависимостей</a>
 
 ### Зависимости для разработки (`devDependencies`)
