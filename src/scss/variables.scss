@@ -31,6 +31,24 @@ $tablet-width: 768px;
   }
 }
 
+@keyframes wiggle-rotate {
+  0% {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(5px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0);
+  }
+  75% {
+    transform: translateY(5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
 @keyframes shake-rotate {
   0% {
     transform: rotate(0deg);

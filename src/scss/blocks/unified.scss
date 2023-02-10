@@ -1,9 +1,14 @@
 .unified {
   margin-bottom: 18px;
+  position: relative;
 }
 
 .unified__text {
   margin-bottom: 6px;
+}
+
+.unified__foods-list {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -37,5 +42,84 @@
 
   .unified__title {
     margin-bottom: 30px;
+  }
+
+  .unified__foods-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+  }
+
+  .unified__foods-item {
+    position: absolute;
+
+    cursor: pointer;
+    animation-name: wiggle-rotate;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+  }
+
+  .unified__foods-item--1 {
+    top: 125px;
+    left: -489px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/map-food-1-desktop.png);
+
+    @include size(110, 65);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/map-food-1-desktop@2x.png);
+    }
+  }
+
+  .unified__foods-item--2 {
+    top: 89px;
+    left: -246px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/map-food-2-desktop.png);
+
+    @include size(144, 79);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/map-food-2-desktop@2x.png);
+    }
+  }
+
+  .unified__foods-item--3 {
+    top: 85px;
+    left: -578px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/map-food-3-desktop.png);
+
+    @include size(109, 65);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/map-food-3-desktop@2x.png);
+    }
+  }
+
+  .unified__foods-item--4 {
+    top: 150px;
+    left: -365px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/map-glasses-desktop.png);
+
+    @include size(132, 70);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/map-glasses-desktop@2x.png);
+    }
   }
 }

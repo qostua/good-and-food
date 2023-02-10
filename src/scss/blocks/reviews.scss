@@ -81,6 +81,10 @@
   position: absolute;
 }
 
+.reviews__foods-list {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 46px 0 37px;
@@ -252,6 +256,71 @@
 
     @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
       background-image: url(../image/leaves@2x.png);
+    }
+  }
+
+  .reviews__foods-list {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+  }
+
+  .reviews__foods-item {
+    position: absolute;
+
+    cursor: pointer;
+    animation-name: wiggle-rotate;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+  }
+
+  .reviews__foods-item--1 {
+    top: 348px;
+    left: -520px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/box-1.png);
+
+    @include size(207, 155);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/box-1@2x.png);
+    }
+  }
+
+  .reviews__foods-item--2 {
+    top: 93px;
+    left: -200px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/box-2.png);
+
+    @include size(149, 195);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/box-2@2x.png);
+    }
+  }
+
+  .reviews__foods-item--3 {
+    top: -48px;
+    left: -530px;
+
+    animation-delay: random(4000) + ms;
+
+    background-image: url(../image/box-3.png);
+
+    @include size(200, 199);
+
+    @media (min-resolution: 144dpi), (css-min-resolution: 1.5dppx) {
+      background-image: url(../image/box-3@2x.png);
     }
   }
 }
